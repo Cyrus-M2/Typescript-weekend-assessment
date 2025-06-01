@@ -46,3 +46,20 @@ let qualify: string = qualifyToDrive("Jane", 22);
 console.log(qualify);
 let qualify1: string = qualifyToDrive("June", 12);
 console.log(qualify1);
+
+// Challenge 6: Finding Largest Number
+function findLargest(a: any, b: any, c: any) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+let largest1: number = findLargest(5, 9, 3); // 9
+console.log(largest1);
+let largest2: number = findLargest(10, 10, 10); // 10
+console.log(largest2);
+let largest3: number = findLargest(-1, -5, -3); // -1
+console.log(largest3);
