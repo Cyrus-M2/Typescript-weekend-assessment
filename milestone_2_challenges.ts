@@ -114,4 +114,16 @@ console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6])) // returns: 3  // (2 + 4 + 6)
   }
 console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))  // returns: 2  // "hello" and 42 are truthy
 
+// Challenge 10: Average of Numbers
+function  average(numbers: number []) {
+  if (!numbers.length) return 0;
+  let sum: number = 0;
+    for (const num of numbers) {
+      sum += num;
+    }
+    return sum / numbers.length;
+  }
+  console.log(average([2, 4, 6, 8]))
+  console.log(average([]))
+
 

@@ -106,3 +106,16 @@ function countTruthy(obj) {
     return count;
 }
 console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null })); // returns: 2  // "hello" and 42 are truthy
+// Challenge 10: Average of Numbers
+function average(numbers) {
+    if (!numbers.length)
+        return 0;
+    var sum = 0;
+    for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+        var num = numbers_1[_i];
+        sum += num;
+    }
+    return sum / numbers.length;
+}
+console.log(average([2, 4, 6, 8]));
+console.log(average([]));
