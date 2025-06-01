@@ -15,3 +15,12 @@ let seconds1: number = convert(5);
 let seconds2: number = convert(2);
 console.log(seconds1); // 300
 console.log(seconds2); // 120
+
+// Challenge 3: Perimeter of a Rectangle
+function perimeterOfRectangle (length: number, width: number) {
+    return 2 * (length + width);
+}
+let perimeter1: number = perimeterOfRectangle(6, 7); // 26
+let perimeter2: number = perimeterOfRectangle(20, 10); // 60
+console.log(perimeter1);
+console.log(perimeter2);

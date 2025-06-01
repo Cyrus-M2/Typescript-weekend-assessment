@@ -13,4 +13,12 @@ function convert(minutes) {
 var seconds1 = convert(5);
 var seconds2 = convert(2);
 console.log(seconds1); // 300
-console.log(seconds2); // 180
+console.log(seconds2); // 120
+// Challenge 3: Perimeter of a Rectangle
+function perimeterOfRectangle(length, width) {
+    return 2 * (length + width);
+}
+var perimeter1 = perimeterOfRectangle(6, 7); // 26
+var perimeter2 = perimeterOfRectangle(20, 10); // 60
+console.log(perimeter1);
+console.log(perimeter2);
