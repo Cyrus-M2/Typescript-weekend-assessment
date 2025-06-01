@@ -183,3 +183,15 @@ function sumMultiples(n, divisor) {
 console.log(sumMultiples(10, 2)); // 30  (2 + 4 + 6 + 8 + 10)
 console.log(sumMultiples(15, 3)); // 45  (3 + 6 + 9 + 12 + 15)
 console.log(sumMultiples(7, 5)); // 5
+// Challenge 15: Sum of Digits
+function sumDigits(num) {
+    var sum = 0;
+    while (num > 0) {
+        sum += num % 10;
+        num = (num - (num % 10)) / 10;
+    }
+    return sum;
+}
+console.log(sumDigits(123)); // 6   (1 + 2 + 3)
+console.log(sumDigits(4567)); // 22  (4 + 5 + 6 + 7)
+console.log(sumDigits(0)); // 0
