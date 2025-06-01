@@ -24,3 +24,12 @@ let perimeter1: number = perimeterOfRectangle(6, 7); // 26
 let perimeter2: number = perimeterOfRectangle(20, 10); // 60
 console.log(perimeter1);
 console.log(perimeter2);
+
+// Challenge 4: Check Negative
+function isNegative (num: number) {
+    return num < 0;
+}
+let checkNegative1: boolean = isNegative(-23); // true
+let checkNegative2: boolean = isNegative(55); // false
+console.log(checkNegative1);
+console.log(checkNegative2);
