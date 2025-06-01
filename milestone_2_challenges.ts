@@ -102,3 +102,16 @@ const candidates = [
   }
 console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6])) // returns: 3  // (2 + 4 + 6) - (1 + 3 + 5) = 12 - 9 = 3  
 
+// Challenge 9: County Truthy
+  function countTruthy(obj: any){
+    let count: number = 0;
+    for (let key in obj) {
+      if (obj[key]) {
+        count++;
+      }
+    }
+    return count;
+  }
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))  // returns: 2  // "hello" and 42 are truthy
+
+

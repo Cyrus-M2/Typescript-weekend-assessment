@@ -80,3 +80,29 @@ function sumEvenNumbers(numbers) {
     return sum;
 }
 console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+// Challenge 8: Difference Between Sum of Even and Odd Numbers
+function differenceEvenOdd(numbers) {
+    var sumEven = 0;
+    var sumOdd = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            sumEven += numbers[i];
+        }
+        else {
+            sumOdd += numbers[i];
+        }
+    }
+    return sumEven - sumOdd;
+}
+console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6])); // returns: 3  // (2 + 4 + 6) - (1 + 3 + 5) = 12 - 9 = 3  
+// Challenge 9: County Truthy
+function countTruthy(obj) {
+    var count = 0;
+    for (var key in obj) {
+        if (obj[key]) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null })); // returns: 2  // "hello" and 42 are truthy
