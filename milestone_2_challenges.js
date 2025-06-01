@@ -153,3 +153,24 @@ function linearSearchAll(arr, value) {
 }
 console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7)); // returns: [2, 5]
 console.log(linearSearchAll([5, 3, 7, 1, 4], 10)); // returns: []
+// Challenge 14: Count Occurrences
+// function countOccurrences(arr: string []): {[key: string]: number} {
+//   let count: object = {};
+//   for (const item of arr) {
+//     count[item] = count[item] ? count[item] + 1 : 1;
+//   }
+//   return count;
+//   }
+//   console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"])) // returns: { apple: 3, banana: 2, orange: 1 }
+// Challenge 15: Remove Duplicates
+function removeDuplicates(arr) {
+    var unique = [];
+    for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
+        var item = arr_1[_i];
+        if (unique.indexOf(item) === -1) {
+            unique.push(item);
+        }
+    }
+    return unique;
+}
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5])); // returns: [1, 2, 3, 4, 5]

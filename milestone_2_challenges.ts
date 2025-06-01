@@ -173,6 +173,19 @@ console.log(linearSearchAll([5, 3, 7, 1, 4], 10))  // returns: []
 //   }
 //   console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"])) // returns: { apple: 3, banana: 2, orange: 1 }
 
+// Challenge 15: Remove Duplicates
+  function removeDuplicates(arr: number []) {
+    let unique: number [] = [];
+    for (const item of arr) {
+      if (unique.indexOf(item) === -1) {
+        unique.push(item);
+      }
+    }
+    return unique;
+  }
+  console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5])) // returns: [1, 2, 3, 4, 5]
+
+
 
 
 
