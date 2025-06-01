@@ -88,3 +88,21 @@ let bmi1: string = calculateBMI(68, 1.75); //Your BMI is 22.2 - Normal weight
 console.log(bmi1);
 let bmi2: string = calculateBMI(85, 1.8); //Your BMI is 26.2 - Overweight
 console.log(bmi2);
+
+// Challenge 8: Greeting Based On Time
+function greetUser(name: string, hour: number) {
+    if (hour >= 5 && hour <=11)  {
+        return `Good morning, ${name}!`
+    }
+    else if (hour >= 12 && hour <= 17) {
+        return `Good Afternoon, ${name}!`
+    }
+    else if (hour >= 18 && hour <= 21) {
+        return `Good evening, ${name}!`
+    }
+    else {
+        return `Good night, ${name}!`
+    }
+    }
+
+    console.log(greetUser('Alice', 19))
