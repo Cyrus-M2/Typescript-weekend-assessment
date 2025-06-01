@@ -138,4 +138,17 @@ function  average(numbers: number []) {
   console.log(linearSearch([5, 3, 7, 1, 4], 7)) // returns: 2
   console.log(linearSearch([5, 3, 7, 1, 4], 10)) // returns: -1   
 
+// Challenge 12: Reverse Linear Search
+  function reverseLinearSearch(arr: number [], value: number) {
+    for (let i: number = arr.length - 1; i >= 0; i--) {
+      if (arr[i] === value) {
+        return i;
+      }
+    }
+    return -1;
+  }
+  console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7)) // returns: 5
+  console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10)) // returns: []
+
+
 
