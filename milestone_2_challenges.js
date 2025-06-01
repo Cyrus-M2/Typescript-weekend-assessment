@@ -69,3 +69,14 @@ function filterByLength(words, length) {
     return filteredWords;
 }
 console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5)); // return ["giraffe", "hippo", "elephant"]  
+// Challenge 7: Sum of Even Numbers using array
+function sumEvenNumbers(numbers) {
+    var sum = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            sum += numbers[i];
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
