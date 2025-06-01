@@ -185,6 +185,23 @@ console.log(linearSearchAll([5, 3, 7, 1, 4], 10))  // returns: []
   }
   console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5])) // returns: [1, 2, 3, 4, 5]
 
+// Challenge 16: Most Frequent
+  function mostFrequent(arr: any) {
+    let count: any = {}
+    let maxCount = 0;
+    let mostFrequentItem;
+    for (const item of arr) {
+      count[item] = count[item] ? count[item] + 1 : 1;
+      if (count[item] > maxCount) {
+        maxCount = count[item];
+        mostFrequentItem = item
+      }
+  }
+  return mostFrequentItem;
+}
+console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]))  // returns: 3
+console.log(mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]))  // returns: "apple"  
+
 
 
 
