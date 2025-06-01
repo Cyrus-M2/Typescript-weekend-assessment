@@ -38,3 +38,15 @@ const candidates = [
     { name: "Charlie", votes: 65 }
   ];
   console.log(findWinner(candidates)); // returns: { name: "Bob", votes: 75 }
+
+    // Challenge 4: Find the Longest Word
+  function findLongestWord(words: string[]) {
+    let longestWord: string = "";
+    for (let i = 0; i < words.length; i++) {
+      if (words[i].length > longestWord.length) {
+        longestWord = words[i];
+      }
+    }
+    return longestWord;
+  }
+  console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"])) // returns: "grapefruit"
