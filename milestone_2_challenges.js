@@ -9,3 +9,14 @@ function sumOfPositives(numbers) {
     return sum;
 }
 console.log(sumOfPositives([1, -3, 5, -2, 9, -8])); //15
+// Challenge 2: Find Maximum Value
+function findMax(array) {
+    var maximum = 0;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] > array[maximum]) {
+            maximum = i;
+        }
+    }
+    return array[maximum];
+}
+console.log(findMax([3, 7, 2, 9, 5])); // returns: 9
