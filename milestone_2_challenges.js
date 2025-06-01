@@ -58,3 +58,14 @@ function countProperties(object) {
     return count;
 }
 console.log(countProperties({ name: "Alice", age: 25, city: "Paris" })); // returns: 3  
+// Challenge 6: Filter by Length  
+function filterByLength(words, length) {
+    var filteredWords = [];
+    for (var i = 0; i < words.length; i++) {
+        if (words[i].length >= length) {
+            filteredWords.push(words[i]);
+        }
+    }
+    return filteredWords;
+}
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5)); // return ["giraffe", "hippo", "elephant"]  
