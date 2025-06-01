@@ -165,3 +165,19 @@ console.log(powerUp(2, 3)); // 8  (2 * 2 * 2)
 console.log(powerUp(5, 0)); // 1  (anything to the zero power is 1)
 console.log(powerUp(3, 4)); // 81 (3 * 3 * 3 * 3)
 console.log(powerUp(0, 0)); // 1
+
+// Challenge 13: Factorial Calculator
+function factorial(n: number) {
+    if (n === 0) {
+        return 1;
+    } else {
+        let answer: number = 1;
+        for (let i = 1; i <= n; i++) {
+            answer *= i;
+        }
+        return answer;
+    }
+}
+console.log(factorial(0)) //1
+console.log(factorial(4)) // 24  (1 * 2 * 3 * 4)
+console.log(factorial(6)) // 720 (1 * 2 * 3 * 4 * 5 * 6)
