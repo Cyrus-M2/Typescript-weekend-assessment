@@ -87,3 +87,18 @@ const candidates = [
   }
   console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]))
 
+  // Challenge 8: Difference Between Sum of Even and Odd Numbers
+  function differenceEvenOdd(numbers: number []) {
+    let sumEven: number = 0;
+    let sumOdd: number = 0;
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 === 0) {
+        sumEven += numbers[i];
+      } else {
+        sumOdd += numbers[i];
+      }
+    }
+    return sumEven - sumOdd;
+  }
+console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6])) // returns: 3  // (2 + 4 + 6) - (1 + 3 + 5) = 12 - 9 = 3  
+
