@@ -30,3 +30,16 @@ var checkNegative1 = isNegative(-23); // true
 var checkNegative2 = isNegative(55); // false
 console.log(checkNegative1);
 console.log(checkNegative2);
+// Challenge 5: Can I Drive
+function qualifyToDrive(name, age) {
+    if (age >= 18) {
+        return "".concat(name, " is old enough to drive.");
+    }
+    else {
+        return "".concat(name, " is not old enough to drive yet.");
+    }
+}
+var qualify = qualifyToDrive("Jane", 22);
+console.log(qualify);
+var qualify1 = qualifyToDrive("June", 12);
+console.log(qualify1);
